@@ -1,9 +1,12 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
-  imports: [NgOptimizedImage],
+  imports: [
+    TranslateModule
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
