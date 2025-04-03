@@ -1,1 +1,7 @@
-<p>projects works!</p>
+<section class="projects">
+    <h3>{{ 'projects.title' | translate }}</h3>
+    <div *ngFor="let item of (('projects.list' | translate) || [])">
+        <h4>{{item.title}}</h4>
+        <p>{{item.description}}</p>
+    </div>
+</section>

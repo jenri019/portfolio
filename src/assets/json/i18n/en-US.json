@@ -15,47 +15,52 @@
     },  
     "projects": {
         "title": "Projects",
-        "sukarne": {
-            "title": "Mi Gestion Sukarne",
-            "description": "Web application for managing personnel at Sukarne, developed with Angular and Node.js."
-        },
-        "mitec": {
-            "title": "Visibility ",
-            "description": "Web application for visualizing required data and managing access to it for Mitec, developed with Angular."
-        },
-        "hyundai": {
-            "title": "Hyundai Loyalty App",
-            "description": "Mobile application for tracking user services, displaying their information, and the benefits they have as a Hyundai customer, developed with Angular and Capacitor."
-        },
-        "palacio_de_hierro": {
-            "title": "Portal de promociones",
-            "description": "Web application for managing promotions at Palacio de Hierro, developed with Angular."
-        },
-        "empaques": {
-            "title": "Soluciones de empaque MyM",
-            "description": "Web application for managing orders from customers of Soluciones de Empaque MyM, developed with Angular."
-        }
+        "list": [
+            {
+                "title": "Mi Gestion Sukarne",
+                "description": "Web application for managing personnel at Sukarne, developed with Angular and Node.js."
+            },
+            {
+                "title": "Visibility ",
+                "description": "Web application for visualizing required data and managing access to it for Mitec, developed with Angular."
+            },
+            {
+                "title": "Hyundai Loyalty App",
+                "description": "Mobile application for tracking user services, displaying their information, and the benefits they have as a Hyundai customer, developed with Angular and Capacitor."
+            },
+            {
+                "title": "Portal de promociones",
+                "description": "Web application for managing promotions at Palacio de Hierro, developed with Angular."
+            },
+            {
+                "title": "Soluciones de empaque MyM",
+                "description": "Web application for managing orders from customers of Soluciones de Empaque MyM, developed with Angular."
+            }
+        ]
     },
     "experience": {
-        "dostics": {
-            "title": "Full Stack Developer",
-            "employer": "Dostics",
-            "date": "February 2022 - February 2023",
-            "description": "Desarrollo de aplicaciones web utilizando React y Redux."
-        },
-        "mecate": {
-            "title": "Frontend Developer",
-            "employer": "Casa Mecate",
-            "date": "February 2024 - February 2025",
-            "description": "Desarrollo de aplicaciones web utilizando React y Redux."
-        }
+        "title": "Experience",
+        "list": [
+            {
+                "title": "Full Stack Developer",
+                "employer": "Dostics",
+                "date": "February 2022 - February 2023",
+                "description": "Desarrollo de aplicaciones web utilizando React y Redux."
+            },
+            {
+                "title": "Frontend Developer",
+                "employer": "Casa Mecate",
+                "date": "February 2024 - February 2025",
+                "description": "Desarrollo de aplicaciones web utilizando React y Redux."
+            }
+        ]
     },
     "contact": {
         "title": "Contact",
         "description": "If you want to get in touch with me, you can do so through the following means:"
     },
     "options": {
-        "download_cv": "Descargar CV",
+        "download_cv": "Download CV",
         "cv_english": "CV (ENG)",
         "cv_spanish": "CV (ESP)"
     }
