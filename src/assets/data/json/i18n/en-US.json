@@ -1,0 +1,55 @@
+{
+    "header": {
+        "choose_languaje": "Elegir idioma",
+        "lang_options": {
+            "spanish": "Español",
+            "english": "Ingles"
+        }
+    },
+    "about": {
+        "welcome_msg": "Saludos! Mi nombre es",
+        "description": "Soy un desarrollador "
+    },
+    "projects": {
+        "title": "Proyectos",
+        "description": "Estos son algunos de mis proyectos"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "description": "Estas son algunas de mis habilidades",
+        "sukarne": {
+            "title": "Gestión de Proyectos",
+            "description": "Gestión de proyectos y tareas utilizando herramientas como Trello, Jira, ClickUp, entre otras."
+        },
+        "mitec": {
+            "title": "Desarrollo Web",
+            "description": "Desarrollo de aplicaciones web utilizando tecnologías como React, Angular, Node.js, entre otras."
+        },
+        "hyundai":{
+            "title": "Desarrollo Móvil",
+            "description": "Desarrollo de aplicaciones móviles utilizando tecnologías como React Native, Flutter, entre otras."
+        },
+        "palacio_de_hierro":{
+            "title": "Desarrollo Móvil",
+            "description": "Desarrollo de aplicaciones móviles utilizando tecnologías como React Native, Flutter, entre otras."
+        }
+    },
+    "experience": {
+        "dostics": {
+            "title": "Desarrollador Full Stack",
+            "employer": "Dostics",
+            "date": "Enero 2022 - Presente",
+            "description": "Desarrollo de aplicaciones web utilizando React y Redux."
+        },
+        "mecate": {
+            "title": "Desarrollador Frontend",
+            "employer": "Casa Mecate",
+            "date": "Enero 2022 - Presente",
+            "description": "Desarrollo de aplicaciones web utilizando React y Redux."
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:"
+    }
+}
