@@ -7,49 +7,56 @@
         }
     },
     "about": {
-        "welcome_msg": "Saludos! Mi nombre es",
-        "description": "Soy un desarrollador "
-    },
-    "projects": {
-        "title": "Proyectos",
-        "description": "Estos son algunos de mis proyectos"
+        "welcome_msg": "Saludos! Soy",
+        "description": "Desarrollador web y móvil con +2 años de experiencia en la creación de aplicaciones utilizando tecnologías como Angular, React, Node.js y mas. Busco constantemente mejorar mis habilidades aprendiendo nuevas tecnologías y herramientas."
     },
     "skills": {
-        "title": "Habilidades",
-        "description": "Estas son algunas de mis habilidades",
+        "title": "Habilidades"
+    },  
+    "projects": {
+        "title": "Proyectos",
         "sukarne": {
-            "title": "Gestión de Proyectos",
-            "description": "Gestión de proyectos y tareas utilizando herramientas como Trello, Jira, ClickUp, entre otras."
+            "title": "Mi Gestion Sukarne",
+            "description": "Aplicacion web para la gestion del personal de la empresa Sukarne, desarrollado con Angular y Node.js."
         },
         "mitec": {
-            "title": "Desarrollo Web",
-            "description": "Desarrollo de aplicaciones web utilizando tecnologías como React, Angular, Node.js, entre otras."
+            "title": "Visibility ",
+            "description": "Aplicacion web para la visualizacion de datos requeridos y la gestion del acceso a este mismo para Mitec, desarrollado con Angular."
         },
-        "hyundai":{
-            "title": "Desarrollo Móvil",
-            "description": "Desarrollo de aplicaciones móviles utilizando tecnologías como React Native, Flutter, entre otras."
+        "hyundai": {
+            "title": "Hyundai Loyalty App",
+            "description": "Aplicacion movil para mantener el seguimiento de los servicios del usuario, mostrar informacion relevante y los beneficios que tiene como cliente de Hyundai, desarrollado con Angular y Capacitor."
         },
-        "palacio_de_hierro":{
-            "title": "Desarrollo Móvil",
-            "description": "Desarrollo de aplicaciones móviles utilizando tecnologías como React Native, Flutter, entre otras."
+        "palacio_de_hierro": {
+            "title": "Portal de promociones",
+            "description": "Aplicacion web para la gestion de las promociones de Palacio de Hierro, desarrollado con Angular."
+        },
+        "empaques": {
+            "title": "Soluciones de empaque MyM",
+            "description": "Aplicacion web para la gestion de pedidos por parte de los clientes de Soluciones de Empaque MyM, desarrollado con Angular."
         }
     },
     "experience": {
         "dostics": {
             "title": "Desarrollador Full Stack",
             "employer": "Dostics",
-            "date": "Enero 2022 - Presente",
+            "date": "Febrero 2022 - Febrero 2023",
             "description": "Desarrollo de aplicaciones web utilizando React y Redux."
         },
         "mecate": {
             "title": "Desarrollador Frontend",
             "employer": "Casa Mecate",
-            "date": "Enero 2022 - Presente",
+            "date": "Febrero 2024 - Febrero 2025",
             "description": "Desarrollo de aplicaciones web utilizando React y Redux."
         }
     },
     "contact": {
         "title": "Contacto",
         "description": "Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:"
+    },
+    "options": {
+        "download_cv": "Descargar CV",
+        "cv_english": "CV (ENG)",
+        "cv_spanish": "CV (ESP)"
     }
 }
