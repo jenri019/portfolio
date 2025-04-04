@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'DMSans';
+    src: url('./assets/fonts/DMSans.woff2') format('woff2'),
+         url('./assets/fonts/DMSans.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
 /* You can add global styles to this file, and also import other style files */
 /* Reset de márgenes y paddings */
 * {
@@ -10,6 +18,10 @@
 /* Heredar box-sizing para elementos anidados */
 html {
     box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'DMSans', sans-serif;
 }
 
 *,
