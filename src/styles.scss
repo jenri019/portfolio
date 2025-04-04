@@ -9,7 +9,7 @@
 :root {
     --primary-color: #10002b;
     --secondary-color: #240046;
-    --tertiry-color: #3c096c;
+    --tertiary-color: #3c096c;
 
     --base-color: #7b2cbf;
     --base-color-light: #9d4edd;
@@ -36,9 +36,23 @@ html {
 }
 
 html, body {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white-color);
     font-family: 'DMSans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+app-root, app-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 *,
