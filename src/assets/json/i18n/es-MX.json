@@ -8,7 +8,7 @@
     },
     "about": {
         "welcome_msg": "Saludos! Soy",
-        "description": "Desarrollador web y móvil con +2 años de experiencia en la creación de aplicaciones utilizando tecnologías como Angular, React, Node.js y mas. Busco constantemente mejorar mis habilidades aprendiendo nuevas tecnologías y herramientas."
+        "description": "Desarrollador web y móvil con experiencia en la creación de aplicaciones utilizando tecnologías como Angular, React, Node.js y mas. Busco constantemente mejorar mis habilidades aprendiendo nuevas tecnologías y herramientas."
     },
     "skills": {
         "title": "Habilidades"
@@ -60,8 +60,6 @@
         "description": "Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:"
     },
     "options": {
-        "download_cv": "Descargar CV",
-        "cv_english": "CV (ENG)",
-        "cv_spanish": "CV (ESP)"
+        "download_cv": "Descargar CV"
     }
 }

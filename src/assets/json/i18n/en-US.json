@@ -8,7 +8,7 @@
     },
     "about": {
         "welcome_msg": "Welcome! I am",
-        "description": "Web and mobile developer with over 2 years of experience in creating applications using technologies such as Angular, React, Node.js, and more. I constantly seek to improve my skills by learning new technologies and tools."
+        "description": "Web and mobile developer with experience building projects using technologies such as Angular, React, Node.js, and more. I constantly seek to improve my skills by learning new technologies and tools."
     },
     "skills": {
         "title": "Skills"
@@ -60,8 +60,6 @@
         "description": "If you want to get in touch with me, you can do so through the following means:"
     },
     "options": {
-        "download_cv": "Download CV",
-        "cv_english": "CV (ENG)",
-        "cv_spanish": "CV (ESP)"
+        "download_cv": "Download CV"
     }
 }
