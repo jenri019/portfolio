@@ -6,6 +6,21 @@
     font-style: normal;
 }
 
+:root {
+    --primary-color: #10002b;
+    --secondary-color: #240046;
+    --tertiry-color: #3c096c;
+
+    --base-color: #7b2cbf;
+    --base-color-light: #9d4edd;
+    --base-color-dark: #5a189a;
+
+    --light-color: #c77dff;
+    --lighter-color: #e0aaff;
+
+    --white-color: #ffffff;
+}
+
 /* You can add global styles to this file, and also import other style files */
 /* Reset de márgenes y paddings */
 * {
@@ -21,6 +36,8 @@ html {
 }
 
 html, body {
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-family: 'DMSans', sans-serif;
 }
 
