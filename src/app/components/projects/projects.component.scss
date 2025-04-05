@@ -20,19 +20,19 @@ section {
         transition: transform 0.3s ease;
 
         &:hover {
-            transform: scale(1.05); // Optional: Slightly enlarge the card on hover
+            transform: scale(1.05);
         }
 
         .card__title ,.card__description {
-            transition: transform 0.3s ease; // Smooth animation for child elements
+            transition: opacity 0.3s ease;
         }
 
         &:hover .card__title {
-            transform: translateX(-100%); // Move to the right on hover
+            opacity: 0;
         }
 
         &:hover .card__description {
-            transform: translateX(0%); // Move to the right on hover
+            opacity: 1;
         }
     }
 
@@ -57,7 +57,7 @@ section {
     .card__description {
         display: flex;
         flex-direction: column;
-        transform: translateX(100%);
+        opacity: 0;
 
         .description {
             text-align: start;
