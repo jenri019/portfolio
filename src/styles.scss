@@ -61,6 +61,10 @@ app-root, app-main {
     box-sizing: inherit;
 }
 
-section {
-    padding: 1rem;
+.title {
+    margin: 8px 1rem;
+}
+
+.content {
+    margin: 1rem;
 }

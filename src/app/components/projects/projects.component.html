@@ -1,7 +1,15 @@
 <section class="projects">
-    <h3>{{ 'projects.title' | translate }}</h3>
-    <div *ngFor="let item of (('projects.list' | translate) || [])">
-        <h4>{{item.title}}</h4>
-        <p>{{item.description}}</p>
+    <h3 class="title">{{ 'projects.title' | translate }}</h3>
+    <div class="projects__container">
+        <div class="card" *ngFor="let item of (('projects.list' | translate) || []); let i = index"
+            [style.background-image]="'url(\'' + staticData[i]?.image + '\')'">
+            <div class="card__item card__title">
+                <h4>{{ item.title }}</h4>
+            </div>
+            <div class="card__item card__description">
+                <p>{{ item.description }}</p>
+                <a [href]="staticData[i]?.url" target="_blank">Ver más</a>
+            </div>
+        </div>
     </div>
 </section>

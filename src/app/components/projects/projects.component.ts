@@ -12,5 +12,26 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
+  staticData = [
+    {
+      url: 'https://example.com/proyecto1',
+      image: '/assets/images/Kynseed Hunt.webp'
+    },
+    {
+      url: 'https://example.com/proyecto1',
+      image: '/assets/images/Kynseed Hunt.webp'
+    },
+    {
+      url: 'https://example.com/proyecto1',
+      image: '/assets/images/Kynseed Hunt.webp'
+    },
+    {
+      url: 'https://example.com/proyecto1',
+      image: '/assets/images/Kynseed Hunt.webp'
+    },
+    {
+      url: 'https://example.com/proyecto2',
+      image: '/assets/images/Kynseed Hunt.webp'
+    }
+  ];
 }
