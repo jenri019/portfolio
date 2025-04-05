@@ -10,8 +10,8 @@
                 <div class="description">
                     <p>{{ item.description }}</p>
                 </div>
-                <button>
-                    Ver mas
+                <button *ngIf="staticData[i].has_project === true" (click)="goToProject(staticData[i].url)">
+                    Ver mas {{ staticData[i].has_project }}
                 </button>
             </div>
         </div>

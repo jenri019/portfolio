@@ -16,27 +16,36 @@ export class ProjectsComponent {
     {
       url: 'https://example.com/proyecto1',
       image: '/assets/images/Kynseed Hunt.webp',
+      has_project: false,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Node', 'Sequelize', 'PostgreSQL'],
     },
     {
       url: 'https://example.com/proyecto1',
       image: '/assets/images/Kynseed Hunt.webp',
+      has_project: false,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
     },
     {
-      url: 'https://example.com/proyecto1',
+      url: 'https://play.google.com/store/apps/details?id=com.hyundai.apployalty&hl=es_MX',
       image: '/assets/images/Kynseed Hunt.webp',
+      has_project: true,
       technologies: ['Angular', 'Capacitor', 'TypeScript', 'HTML', 'CSS'],
     },
     {
       url: 'https://example.com/proyecto1',
       image: '/assets/images/Kynseed Hunt.webp',
+      has_project: false,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
     },
     {
       url: 'https://example.com/proyecto2',
       image: '/assets/images/Kynseed Hunt.webp',
+      has_project: false,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
     }
   ];
+
+  goToProject(url: string) {
+    window.open(url, '_blank');
+  }
 }
