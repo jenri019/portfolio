@@ -7,8 +7,12 @@
                 <h4>{{ item.title }}</h4>
             </div>
             <div class="card__item card__description">
-                <p>{{ item.description }}</p>
-                <a [href]="staticData[i]?.url" target="_blank">Ver más</a>
+                <div class="description">
+                    <p>{{ item.description }}</p>
+                </div>
+                <button>
+                    Ver mas
+                </button>
             </div>
         </div>
     </div>
