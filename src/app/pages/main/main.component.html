@@ -1,32 +1,8 @@
 <app-navbar />
 <div class="main_page">
-    @defer (on viewport) {
-        <app-about appFadeIn  />
-    } @placeholder {
-        <div class="placeholder"></div>
-    }
-
-    @defer (on viewport) {
-        <app-projects appFadeIn  />
-    } @placeholder {
-        <div class="placeholder"></div>
-    }
-
-    @defer (on viewport) {
-        <app-skills appFadeIn  />
-    } @placeholder {
-    <div class="placeholder"></div>
-    }
-
-    @defer (on viewport) {
-        <app-experience appFadeIn  />
-    } @placeholder {
-        <div class="placeholder"></div>
-    }
-
-    @defer (on viewport) {
-        <app-contact appFadeIn  />
-    } @placeholder {
-        <div class="placeholder"></div>
-    }
+    <app-about />
+    <app-projects />
+    <app-skills />
+    <app-experience />
+    <app-contact />
 </div>
