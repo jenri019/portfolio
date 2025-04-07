@@ -1,0 +1,23 @@
+.about {
+    display: flex;
+    flex-direction: column;
+}
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1rem;
+}
+img {
+    width: clamp(250px, 20vw, 350px);
+    height: clamp(250px, 20vw, 350px);
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+    .about {
+        flex-direction: row;
+        align-items: center;
+    }
+}
