@@ -5,10 +5,20 @@ import { SkillsComponent } from "../../components/skills/skills.component";
 import { ContactComponent } from "../../components/contact/contact.component";
 import { ExperienceComponent } from "../../components/experience/experience.component";
 import { NavbarComponent } from "../../components/navbar/navbar.component";
+import { FadeInDirective } from '../../directives/fade-in.directive';
 
 @Component({
   selector: 'app-main',
-  imports: [AboutComponent, ProjectsComponent, SkillsComponent, ContactComponent, ExperienceComponent, NavbarComponent],
+  standalone: true,
+  imports: [
+    FadeInDirective,
+    AboutComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    ContactComponent,
+    ExperienceComponent,
+    NavbarComponent
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
