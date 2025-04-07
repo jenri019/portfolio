@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experience',
+  standalone: true,
   imports: [
     CommonModule,
     TranslateModule
