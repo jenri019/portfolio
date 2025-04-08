@@ -3,12 +3,22 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    max-width: 850px;
+    max-width: 1024px;
     flex: 1;
+    padding-top: 0;
+    padding-bottom: 55px;
 }
+
 .placeholder {
   height: 300px; /* Ajusta según tu diseño */
   background: #f5f5f5;
   margin: 20px 0;
   border-radius: 8px;
+}
+
+@media screen and (min-width: 700px) {
+    .main_page {
+      padding-top: 55px;
+      padding-bottom: 0;
+    }
 }

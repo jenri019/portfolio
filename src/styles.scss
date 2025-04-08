@@ -49,7 +49,7 @@ html {
 }
 
 html, body {
-    background-color: var(--primary-color);
+    background-color: var(--base-color-light);
     color: var(--white-color);
     font-family: 'DMSans', sans-serif;
 }
@@ -80,4 +80,23 @@ app-root, app-main {
 
 .content {
     margin: 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-auto-rows: minmax(auto, 1fr);
+    grid-template-columns: 1fr;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 668px) {
+    .grid-2 {
+        grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr);
+    }
 }
