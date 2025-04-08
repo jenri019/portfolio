@@ -82,9 +82,13 @@ app-root, app-main {
     margin: 1rem;
 }
 
-.grid-2 {
+.grid {
     display: grid;
     grid-auto-rows: minmax(auto, 1fr);
+}
+
+.grid-2,
+.grid-3 {
     grid-template-columns: 1fr;
 }
 
@@ -93,10 +97,17 @@ app-root, app-main {
     padding: 1rem;
     border-radius: 20px;
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 668px) {
     .grid-2 {
         grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr);
+    }
+    .grid-3 {
+        grid-template-columns: 1fr 3fr;
     }
 }

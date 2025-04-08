@@ -1,0 +1,34 @@
+.skills {
+    .skills__exp {
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+
+    .skills__tech {
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .skills__item {
+            background-color: var(--light-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 1rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-wrap: nowrap;
+        }
+    }
+}
