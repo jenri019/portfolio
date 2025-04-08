@@ -60,6 +60,8 @@
         "description": "Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:"
     },
     "options": {
+        "show_details": "Mostrar detalles",
+        "open_project": "Ver proyecto",
         "download_cv": "Descargar CV"
     }
 }

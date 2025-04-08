@@ -21,7 +21,7 @@
                 "description": "Web application for managing personnel at Sukarne, developed with Angular and Node.js."
             },
             {
-                "title": "Visibility ",
+                "title": "Visibility",
                 "description": "Web application for visualizing required data and managing access to it for Mitec, developed with Angular."
             },
             {
@@ -60,6 +60,8 @@
         "description": "If you want to get in touch with me, you can do so through the following means:"
     },
     "options": {
+        "show_details": "Show details",
+        "open_project": "Go to project",
         "download_cv": "Download CV"
     }
 }
