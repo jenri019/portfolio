@@ -19,6 +19,19 @@
     --lighter-color: #e0aaff;
 
     --white-color: #ffffff;
+    
+    --primary-color-rgb: 16, 0, 43; /* #10002b */
+    --secondary-color-rgb: 36, 0, 70; /* #240046 */
+    --tertiary-color-rgb: 60, 9, 108; /* #3c096c */
+
+    --base-color-rgb: 123, 44, 191; /* #7b2cbf */
+    --base-color-light-rgb: 157, 78, 221; /* #9d4edd */
+    --base-color-dark-rgb: 90, 24, 154; /* #5a189a */
+
+    --light-color-rgb: 199, 125, 255; /* #c77dff */
+    --lighter-color-rgb: 224, 170, 255; /* #e0aaff */
+
+    --white-color-rgb: 255, 255, 255; /* #ffffff */
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -36,7 +49,7 @@ html {
 }
 
 html, body {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
     font-family: 'DMSans', sans-serif;
 }
