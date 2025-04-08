@@ -1,17 +1,17 @@
 <section class="projects">
     <h3 class="title">{{ 'projects.title' | translate }}</h3>
     <div class="projects__container">
-        <div class="card" *ngFor="let item of (('projects.list' | translate) || []); let i = index"
-            [style.background-image]="'url(\'' + staticData[i]?.image + '\')'">
+        <div class="card" *ngFor="let item of staticData; let i = index"
+            [style.background-image]="'url(\'' + item.image + '\')'">
             <div class="card__item card__title">
                 <h4>{{ item.title }}</h4>
             </div>
             <div class="card__item card__description">
-                <div class="description">
-                    <p>{{ item.description }}</p>
+                <div class="description" (click)="showDetails(i)">
+                    <p>{{'options.show_details' | translate}}</p>
                 </div>
                 <button *ngIf="staticData[i].has_project === true" (click)="goToProject(staticData[i].url)">
-                    Ver mas {{ staticData[i].has_project }}
+                    {{'options.open_project' | translate}}
                 </button>
             </div>
         </div>
