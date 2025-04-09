@@ -49,7 +49,12 @@ html {
 }
 
 html, body {
-    background-color: var(--base-color-light);
+    background: linear-gradient(
+        to left,
+        var(--base-color-light),
+        var(--base-color),
+        var(--base-color-dark)
+    );
     color: var(--white-color);
     font-family: 'DMSans', sans-serif;
 }
