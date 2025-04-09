@@ -1,6 +1,6 @@
 <section class="experience">
     <h3 class="title">{{ 'experience.title' | translate }}</h3>
-    <div *ngFor="let item of (('experience.list' | translate) || [])">
+    <div class="content" *ngFor="let item of (('experience.list' | translate) || [])">
         <h4>{{item.title}} - {{item.employer}}</h4>
         <h6>{{item.date}}</h6>
         <p>{{item.description}}</p>
