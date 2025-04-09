@@ -44,6 +44,8 @@ section {
         height: 100%;
         background-color: rgba(var(--primary-color-rgb), 0.5); 
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .card__title {
@@ -52,6 +54,25 @@ section {
         justify-content: center;
         font-size: 2rem;
         padding: 1rem;
+
+        .badge__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+
+            .badge {
+                background-color: rgba(var(--white-color-rgb), 0.9);
+                padding: 0.2rem 0.8rem;
+                border-radius: 20px;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 600;
+                border: solid 2px;
+            }
+        }
     }
 
     .card__description {

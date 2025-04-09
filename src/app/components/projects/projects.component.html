@@ -5,9 +5,14 @@
             [style.background-image]="'url(\'' + item.image + '\')'">
             <div class="card__item card__title">
                 <h4>{{ item.title }}</h4>
+                <div class="badge__container">
+                    <span class="badge" *ngFor="let tech of item.technologies"
+                        [style.border-color]="getColor(tech)"
+                        [style.color]="getColor(tech)">{{ tech }}</span>
+                </div>
             </div>
-            <div class="card__item card__description">
-                <div class="description" (click)="showDetails(i)">
+            <div class="card__item card__description" (click)="showDetails(i)">
+                <div class="description">
                     <p>{{'options.show_details' | translate}}</p>
                 </div>
                 <button *ngIf="staticData[i].has_project === true" (click)="goToProject(staticData[i].url)">

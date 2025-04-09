@@ -54,7 +54,7 @@ export class ProjectsComponent {
 
     constructor(
         private _dialogService: DialogService
-    ) {}
+    ) { }
 
 
     showDetails(index: number): void {
@@ -66,5 +66,28 @@ export class ProjectsComponent {
 
     goToProject(url: string) {
         window.open(url, '_blank');
+    }
+
+    getColor(tech: string) {
+        switch (tech) {
+            case 'Angular':
+                return '#DD0031';
+            case 'TypeScript':
+                return '#007ACC';
+            case 'HTML':
+                return '#E34F26';
+            case 'CSS':
+                return '#1572B6';
+            case 'Node':
+                return '#8CC84B';
+            case 'Sequelize':
+                return '#52B0E7';
+            case 'PostgreSQL':
+                return '#336791';
+            case 'Capacitor':
+                return '#119EFF';
+            default:
+                return '#ffffff';
+        }
     }
 }
