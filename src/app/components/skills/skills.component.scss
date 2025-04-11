@@ -8,16 +8,23 @@
         flex-wrap: wrap;
 
         .skills__item {
-            background-color: var(--light-color);
-            transition: all 0.3s ease;
-            border-radius: 10px;
-            margin: 0 1rem;
+            color: var(--white-color);
+            border-radius: 50%;
             padding: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-wrap: nowrap;
+
+            .icon {
+                font-size: 3rem;
+                margin-bottom: 6px;
+            }
+
+            .name {
+                font-size: 12px;
+                text-align: center;
+            }
         }
     }
 }
