@@ -1,5 +1,5 @@
 .about {    
-    .photo {
+    .about__photo {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,4 +29,24 @@
         align-items: center;
         text-align: center;
     }
+
+    .about__exp {
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 668px) {
+    .about__photo {
+        grid-row: span 2; /* Ocupa dos filas */
+        grid-column: 1;
+    }
+    
 }
