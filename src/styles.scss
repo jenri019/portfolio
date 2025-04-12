@@ -51,12 +51,7 @@ html {
 }
 
 html, body {
-    background: linear-gradient(
-        to left,
-        var(--base-color-light),
-        var(--base-color),
-        var(--base-color-dark)
-    );
+    background: var(--primary-color);
     color: var(--white-color);
     font-family: 'DMSans', sans-serif;
 }

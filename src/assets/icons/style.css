@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'portfolio';
   src:
-    url('./fonts/portfolio.ttf?ytqnme') format('truetype'),
-    url('./fonts/portfolio.woff?ytqnme') format('woff'),
-    url('./fonts/portfolio.svg?ytqnme#portfolio') format('svg');
+    url('./fonts/portfolio.ttf?wj02vl') format('truetype'),
+    url('./fonts/portfolio.woff?wj02vl') format('woff'),
+    url('./fonts/portfolio.svg?wj02vl#portfolio') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 .icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change ./fonts */
   font-family: 'portfolio' !important;
   speak: never;
   font-style: normal;
@@ -24,6 +24,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-language:before {
+  content: "\e918";
+}
+.icon-github:before {
+  content: "\e919";
+}
+.icon-whatsapp:before {
+  content: "\e91a";
+}
+.icon-mail:before {
+  content: "\e91b";
+}
+.icon-cognito:before {
+  content: "\e913";
+}
+.icon-css:before {
+  content: "\e914";
+}
+.icon-html:before {
+  content: "\e915";
+}
+.icon-zap:before {
+  content: "\e916";
+}
 .icon-angular:before {
   content: "\e900";
 }
@@ -54,7 +78,7 @@
 .icon-ngrx:before {
   content: "\e909";
 }
-.icon-nodedotjs:before {
+.icon-node:before {
   content: "\e90a";
 }
 .icon-php:before {
@@ -80,4 +104,7 @@
 }
 .icon-typescript:before {
   content: "\e912";
+}
+.icon-check:before {
+  content: "\e917";
 }
