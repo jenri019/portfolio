@@ -1,11 +1,11 @@
 <div class="navbar__container">
     <nav class="navbar">
-        <button class="navbar__option" *ngFor="let nav of navigation">
-            <span class="icon icon-check"></span>
-            <span class="description"> {{nav}}</span>
+        <button class="navbar__option" [matMenuTriggerFor]="menu">
+            <span class="icon icon-language "></span>
         </button>
-        <div class="navbar__close">
-            <button>Close</button>
-        </div>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>{{ 'header.lang_options.spanish' | translate }}</button>
+            <button mat-menu-item>{{ 'header.lang_options.english' | translate }}</button>
+        </mat-menu>
     </nav>
 </div>

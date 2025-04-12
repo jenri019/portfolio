@@ -1,64 +1,54 @@
 .navbar__container {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     position: fixed;
+    bottom: 0;
     width: 100%;
     left: 0;
     display: flex;
     justify-content: center;
     z-index: 99;
-    bottom: 0;
-    height: 100%;
-    overflow: auto;
-    
-    .navbar  {
+    height: 50px;
+}
+
+.navbar  {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    background-color: transparent;
+
+    .navbar__option {
         display: flex;
-        width: 100%;
-        max-width: 800px;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 2rem;
-        align-items: flex-start;
-        padding: 1rem;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 8px 12px;
+        cursor: pointer;
         color: white;
-        min-height: fit-content;
+        background-color: var(--tertiary-color);
+        text-decoration: none;
+        border: none;
+        gap: 1rem;
+        border-radius: 15px;
+        font-size: 2rem;
 
-        .navbar__option {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-            padding: 8px 12px;
-            cursor: pointer;
-            color: white;
-            background-color: var(--tertiary-color);
-            text-decoration: none;
-            border: none;
-            gap: 1rem;
-            width: 100%;
-            font-size: 1.5rem;
-            border-radius: 15px;
-
-            &:hover {
-                background-color: var(--light-color);
-                color: var(--secondary-color);
-                transition: color 0.3s ease-in-out;
-            }
-        }
-
-        .navbar__close {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            button {
-                background-color: var(--tertiary-color);
-                color: var(--secondary-color);
-                border: none;
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-            }
+        &:hover {
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            transition: color 0.3s ease-in-out;
         }
     }
+}
+
+::ng-deep .mat-mdc-menu-content {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 700px) {
