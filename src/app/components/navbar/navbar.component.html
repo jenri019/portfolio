@@ -1,7 +1,11 @@
 <div class="navbar__container">
     <nav class="navbar">
-        <button>Option 1</button>
-        <button>Option 2</button>
-        <button>Option 3</button>
+        <button class="navbar__option" *ngFor="let nav of navigation">
+            <span class="icon icon-check"></span>
+            <span class="description"> {{nav}}</span>
+        </button>
+        <div class="navbar__close">
+            <button>Close</button>
+        </div>
     </nav>
 </div>
