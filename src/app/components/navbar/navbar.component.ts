@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {MatMenuModule} from '@angular/material/menu';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-navbar',
@@ -14,8 +14,24 @@ import { TranslateModule } from '@ngx-translate/core';
     styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+    currentLanguage: string = 'es-MX';
     navigation:string[] = [
         'language',
         'download'
     ];
+
+    constructor(
+        private _translate: TranslateService
+    ) { }
+  
+    ngOnInit() {
+      this.currentLanguage = localStorage.getItem('lang') || 'en-US';
+      this._translate.use(this.currentLanguage);
+    }
+
+    setLanguage(lang: string) {
+        this._translate.use(lang);
+        localStorage.setItem('lang', lang);
+        this.currentLanguage = lang;
+    }
 }

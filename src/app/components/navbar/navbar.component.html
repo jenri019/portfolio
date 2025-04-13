@@ -4,8 +4,14 @@
             <span class="icon icon-language "></span>
         </button>
         <mat-menu #menu="matMenu">
-            <button mat-menu-item>{{ 'header.lang_options.spanish' | translate }}</button>
-            <button mat-menu-item>{{ 'header.lang_options.english' | translate }}</button>
+            <button mat-menu-item class="mat-menu-option" [ngClass]="{'active': currentLanguage === 'es-MX'}" (click)="setLanguage('es-MX')">
+                {{ 'header.lang_options.spanish' | translate }}
+                <span class="icon icon-check"></span>
+            </button>
+            <button mat-menu-item class="mat-menu-option" [ngClass]="{'active': currentLanguage !== 'es-MX'}" (click)="setLanguage('en-US')">
+                {{ 'header.lang_options.english' | translate }}
+                <span class="icon icon-check"></span>
+            </button>
         </mat-menu>
     </nav>
 </div>

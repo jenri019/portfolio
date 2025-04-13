@@ -10,7 +10,7 @@
     height: 50px;
 }
 
-.navbar  {
+.navbar {
     display: flex;
     width: 100%;
     max-width: 800px;
@@ -41,6 +41,22 @@
             color: var(--secondary-color);
             transition: color 0.3s ease-in-out;
         }
+    }
+}
+
+.mat-menu-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .icon {
+        visibility: hidden;
+    }
+}
+
+.mat-menu-option.active {
+    .icon {
+        visibility: visible;
     }
 }
 
