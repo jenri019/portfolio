@@ -3,45 +3,10 @@
     background-color: var(--secondary-color);
 
     .about__photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-    }
-
-    .about__me {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem;
-        // Se colocará automáticamente al lado de la foto
-    }
-
-    .about__exp {
-        font-size: clamp(2rem, 2vw, 3rem);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 1rem;
-    }
-
-    .about__exp {
-        h3 {
-            font-size: 3rem;
-        }
-
-        p {
-            margin: 0;
-            font-size: 1.2rem;
-            text-align: center;
         }
     }
 }

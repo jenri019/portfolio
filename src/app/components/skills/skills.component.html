@@ -2,8 +2,8 @@
     <h3 class="title">{{ 'skills.title' | translate }}</h3>
     <div class="skills__tech card">
         <div class="skills__item" *ngFor="let icon of technologies">
-            <span class="icon" [ngClass]="`icon-${icon.icon}`"></span>
-            <span class="name">{{icon.name}}</span>
+            <span class="icon title" [ngClass]="`icon-${icon.icon}`"></span>
+            <span class="name quote text-center">{{icon.name}}</span>
         </div>
     </div>
 </section>
