@@ -8,6 +8,7 @@
     },
     "about": {
         "welcome_msg": "Saludos! Soy",
+        "position": "Desarrollador Front End",
         "experience": "Años de experiencia",
         "description": "Desarrollador web y móvil con experiencia en la creación de aplicaciones utilizando tecnologías como Angular, React, Node.js y mas. Busco constantemente mejorar mis habilidades aprendiendo nuevas tecnologías y herramientas."
     },

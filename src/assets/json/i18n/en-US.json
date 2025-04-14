@@ -8,6 +8,7 @@
     },
     "about": {
         "welcome_msg": "Welcome! I am",
+        "position": "Front End Developer",
         "experience": "Years of experience",
         "description": "Web and mobile developer with experience building projects using technologies such as Angular, React, Node.js, and more. I constantly seek to improve my skills by learning new technologies and tools."
     },
