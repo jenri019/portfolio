@@ -1,7 +1,18 @@
 <div class="navbar__container">
     <nav class="navbar">
+        <h2 class="name">José Enrique García Calderón</h2>
+        <div class="spacing"></div>
+        <button class="navbar__option small" (click)="openLink(0)">
+            <span class="icon icon-mail"></span>
+        </button>
+        <button class="navbar__option small" (click)="openLink(1)">
+            <span class="icon icon-github"></span>
+        </button>
+        <button class="navbar__option small" (click)="openLink(2)">
+            <span class="icon icon-whatsapp"></span>
+        </button>
         <button class="navbar__option" [matMenuTriggerFor]="menu">
-            <span class="icon icon-language "></span>
+            <span class="icon icon-language"></span>
         </button>
         <mat-menu #menu="matMenu">
             <button mat-menu-item class="mat-menu-option" [ngClass]="{'active': currentLanguage === 'es-MX'}" (click)="setLanguage('es-MX')">

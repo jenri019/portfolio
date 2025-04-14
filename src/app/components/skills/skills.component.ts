@@ -34,8 +34,9 @@ export class SkillsComponent {
         { icon: 'redux', name: 'Redux' },
         { icon: 'sequelize', name: 'Sequelize' },
         { icon: 'sqlite', name: 'SQLite' },
+        { icon: 'sqlserver', name: 'SQL Server' },
         { icon: 'tailwindcss', name: 'Tailwind CSS' },
         { icon: 'typescript', name: 'TypeScript' },
-        { icon: 'zap', name: 'ZAP' }
+        { icon: 'zap', name: 'OWASP-ZAP' }
     ];
 }
