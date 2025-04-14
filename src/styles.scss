@@ -76,6 +76,23 @@ app-root, app-main {
     box-sizing: inherit;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Opcional: Añade un pequeño desplazamiento */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    opacity: 0; /* Oculta inicialmente */
+    animation: fadeIn 0.8s ease-in-out forwards; /* Aplica la animación */
+    animation-delay: var(--animation-delay, 0s); /* Permite un retraso opcional */
+}
+
 .title {
     margin: 8px 1rem;
 }
