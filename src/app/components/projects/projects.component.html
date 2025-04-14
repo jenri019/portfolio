@@ -1,23 +1,25 @@
 <section class="projects">
     <h3 class="title">{{ 'projects.title' | translate }}</h3>
     <div class="projects__container">
-        <div class="card" *ngFor="let item of staticData; let i = index"
-            [style.background-image]="'url(\'' + item.image + '\')'">
-            <div class="card__item card__title">
-                <h4>{{ item.title }}</h4>
-                <div class="badge__container">
-                    <span class="badge" *ngFor="let tech of item.technologies"
+        <div class="project__card" *ngFor="let item of ('projects.list' | translate); let i = index" [style.background-image]="'url(\'' + staticData[i].image + '\')'">
+            <div class="project__bg">
+                <h4>{{ staticData[i].title }}</h4>
+                <div class="project__description">
+                    {{ item.description }}
+                </div>
+                <div class="project__badge__container">
+                    <span class="badge__icon icon" *ngFor="let tech of staticData[i].technologies" [ngClass]="`icon-${tech}`"
                         [style.border-color]="getColor(tech)"
-                        [style.color]="getColor(tech)">{{ tech }}</span>
+                        [style.color]="getColor(tech)"></span>
                 </div>
-            </div>
-            <div class="card__item card__description" (click)="showDetails(i)">
-                <div class="description">
-                    <p>{{'options.show_details' | translate}}</p>
+                <div class="project__options">
+                    <div *ngIf="staticData[i].has_repo === true">
+                        <span class="icon icon-github"></span>
+                    </div>
+                    <div *ngIf="staticData[i].has_project === true" (click)="goToProject(staticData[i].url)">
+                        <span class="icon icon-home"></span>
+                    </div>
                 </div>
-                <button *ngIf="staticData[i].has_project === true" (click)="goToProject(staticData[i].url)">
-                    {{'options.open_project' | translate}}
-                </button>
             </div>
         </div>
     </div>
