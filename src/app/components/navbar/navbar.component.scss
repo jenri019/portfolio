@@ -80,6 +80,12 @@
     .icon {
         visibility: hidden;
     }
+
+    &:hover {
+        background-color: var(--primary-color)!important;
+        color: var(--lighter-color)!important;
+        transition: background-color 0.1s ease-in-out!important;
+    }
 }
 
 .mat-menu-option.active {
