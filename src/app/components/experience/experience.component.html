@@ -1,12 +1,12 @@
 <section class="experience">
-    <h3 class="title">{{ 'experience.title' | translate }}</h3>
+    <h1 class="title">{{ 'experience.title' | translate }}</h1>
     <div class="timeline">
         <div class="timeline-item" *ngFor="let item of (('experience.list' | translate) || [])">
             <div class="timeline-marker"></div>
             <div class="timeline-content card">
-                <h4>{{item.title}} - {{item.employer}}</h4>
-                <h6>{{item.date}}</h6>
-                <p>
+                <h2 class="subtitle">{{item.title}} - {{item.employer}}</h2>
+                <h3 class="subtitle-2 mb-1">{{item.date}}</h3>
+                <p class="text-content-2">
                     {{item.description}}
                 </p>
             </div>

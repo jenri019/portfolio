@@ -44,32 +44,6 @@
         text-overflow: ellipsis;
         font-size: clamp(1rem, 3vw, 1.5rem);
     }
-
-    .navbar__option {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        padding: 8px 12px;
-        cursor: pointer;
-        color: white;
-        background-color: var(--tertiary-color);
-        text-decoration: none;
-        border: none;
-        gap: 1rem;
-        border-radius: 15px;
-        font-size: 2rem;
-
-        &:hover {
-            background-color: var(--light-color);
-            color: var(--secondary-color);
-            transition: color 0.3s ease-in-out;
-        }
-    }
-
-    .small {
-        font-size: 1.2rem;
-    }
 }
 
 .mat-menu-option {
@@ -81,7 +55,7 @@
         visibility: hidden;
     }
 
-    &:hover {
+    &:focus, &:hover {
         background-color: var(--primary-color)!important;
         color: var(--lighter-color)!important;
         transition: background-color 0.1s ease-in-out!important;

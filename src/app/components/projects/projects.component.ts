@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { DialogService } from '../../services/dialog.service';
 
 @Component({
     selector: 'app-projects',
@@ -18,6 +17,7 @@ export class ProjectsComponent {
         {
             title: 'Mi Gestion Sukarne',
             url: 'https://example.com/proyecto1',
+            repo: '',
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
@@ -26,6 +26,7 @@ export class ProjectsComponent {
         {
             title: 'Visibility',
             url: 'https://example.com/proyecto1',
+            repo: '',
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
@@ -34,6 +35,7 @@ export class ProjectsComponent {
         {
             title: 'Hyundai Loyalty App',
             url: 'https://play.google.com/store/apps/details?id=com.hyundai.apployalty&hl=es_MX',
+            repo: '',
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: true,
             has_repo: false,
@@ -42,6 +44,7 @@ export class ProjectsComponent {
         {
             title: 'Portal de promociones',
             url: 'https://example.com/proyecto1',
+            repo: '',
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
@@ -50,24 +53,13 @@ export class ProjectsComponent {
         {
             title: 'Soluciones de empaque MyM',
             url: 'https://example.com/proyecto2',
+            repo: '',
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
             technologies: ['angular', 'typescript', 'html', 'css', 'ngrx'],
         }
     ];
-
-    constructor(
-        private _dialogService: DialogService
-    ) { }
-
-
-    showDetails(index: number): void {
-        this._dialogService.showDialog({
-            index: index,
-        });
-        // Aquí puedes agregar la lógica que necesites
-    }
 
     goToProject(url: string) {
         window.open(url, '_blank');

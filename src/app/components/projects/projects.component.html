@@ -1,24 +1,25 @@
 <section class="projects">
-    <h3 class="title">{{ 'projects.title' | translate }}</h3>
-    <div class="projects__container">
-        <div class="project__card" *ngFor="let item of ('projects.list' | translate); let i = index" [style.background-image]="'url(\'' + staticData[i].image + '\')'">
-            <div class="project__bg">
-                <h4>{{ staticData[i].title }}</h4>
-                <div class="project__description">
+    <h1 class="title">{{ 'projects.title' | translate }}</h1>
+    <div class="projects__container flex flex-row flex-wrap justify-center">
+        <div class="project__card m-1" *ngFor="let item of ('projects.list' | translate); let i = index" [style.background-image]="'url(\'' + staticData[i].image + '\')'">
+            <div class="project__bg flex flex-col">
+                <h2 class="subtitle">{{ staticData[i].title }}</h2>
+                <div class="project__description text-content flex-1">
                     {{ item.description }}
                 </div>
-                <div class="project__badge__container">
+                <div class="project__badge__container flex-1">
                     <span class="badge__icon icon" *ngFor="let tech of staticData[i].technologies" [ngClass]="`icon-${tech}`"
                         [style.border-color]="getColor(tech)"
                         [style.color]="getColor(tech)"></span>
                 </div>
+                <div class="separator"></div>
                 <div class="project__options">
-                    <div *ngIf="staticData[i].has_repo === true">
+                    <button *ngIf="staticData[i].has_repo === true" aria-label="Visit repository" class="navbar__option font-19" (click)="goToProject(staticData[i].repo)">
                         <span class="icon icon-github"></span>
-                    </div>
-                    <div *ngIf="staticData[i].has_project === true" (click)="goToProject(staticData[i].url)">
+                    </button>
+                    <button *ngIf="staticData[i].has_project === true" aria-label="View on live" class="navbar__option font-19" (click)="goToProject(staticData[i].url)">
                         <span class="icon icon-home"></span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
