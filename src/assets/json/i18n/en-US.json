@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Portfolio José Enrique - Front End Developer",
+        "description": "Portfolio of a Front End developer with experience in Angular, React, Node.js, and more.",
+        "keywords": "portfolio, developer, front end, angular, react, node.js"
+    },
     "header": {
         "choose_languaje": "Choose language",
         "lang_options": {

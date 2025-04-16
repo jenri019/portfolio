@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Portafolio José Enrique - Desarrollador Front End",
+        "description": "Portafolio de un desarrollador Front End con experiencia en Angular, React, Node.js. y más.",
+        "keywords": "portafolio, desarrollador, front end, angular, react, node.js"
+    },
     "header": {
         "choose_languaje": "Elegir idioma",
         "lang_options": {
