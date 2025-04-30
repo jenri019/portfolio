@@ -1,2 +1,29 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@use 'assets/icons/style.css';
+
+@font-face {
+    font-family: 'DMSans';
+    src: url('./assets/fonts/DMSans.woff2') format('woff2'),
+         url('./assets/fonts/DMSans.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Opcional: Añade un pequeño desplazamiento */
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section * {
+    opacity: 0; /* Oculta inicialmente */
+    animation: fadeIn 0.8s ease-in-out forwards; /* Aplica la animación */
+    animation-delay: var(--animation-delay, 0s); /* Permite un retraso opcional */
+}
