@@ -1,13 +1,21 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, inject, input, output, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
-  selector: 'header-options',
-  imports: [],
-  templateUrl: './header-options.component.html'
+    selector: 'header-options',
+    imports: [
+        FormsModule,
+        CommonModule
+    ],
+    templateUrl: './header-options.component.html'
 })
 export class HeaderOptionsComponent {
-    changeLanguage(language: string) {
-        // Implement your language change logic here
-        console.log('Language changed', language);
+    private _languageService = inject(LanguageService);
+    language = this._languageService.currentLanguage;
+
+    toggleLanguage() {
+        this._languageService.toggleLanguage();
     }
 }

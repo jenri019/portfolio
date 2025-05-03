@@ -2,10 +2,13 @@
 <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-whatsapp"></span> Whatsapp</button>
 <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-git"></span>Github</button>
 <button class="btn btn-ghost rounded-field" tabindex="0">
-    <label class="btn swap swap-rotate m-0 p-0">
-        <input type="checkbox" />
-        <!-- this hidden checkbox controls the state -->
-        <span class="icon icon-git swap-off"></span>
-        <span class="icon icon-angular swap-on"></span>
-    </label>
-</button>
+    <button class="btn btn-ghost rounded-field" tabindex="0">
+        <label class="btn swap swap-rotate m-0 p-0">
+            <input type="checkbox"
+            [checked]="language() === 'en-US'"
+            (change)="toggleLanguage()" />
+            <!-- this hidden checkbox controls the state -->
+            <span class="icon icon-git swap-off"></span>
+            <span class="icon icon-angular swap-on"></span>
+        </label>
+    </button>
