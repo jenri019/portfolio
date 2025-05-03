@@ -6,7 +6,8 @@
     background-color: var(--color-gray-700) !important;
 }
 .timeline {
-    border-color: var(--color-gray-700) !important;
+    border: none!important;
+    padding: 0!important;
 }
 
 @font-face {
@@ -28,8 +29,23 @@
     }
 }
 
-section * {
+@keyframes fadeInOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
     opacity: 0; /* Oculta inicialmente */
     animation: fadeIn 0.8s ease-in-out forwards; /* Aplica la animación */
+    animation-delay: var(--animation-delay, 0s); /* Permite un retraso opcional */
+}
+
+.fade-in-opacity {
+    opacity: 0; /* Oculta inicialmente */
+    animation: fadeInOpacity 0.8s ease-in-out forwards; /* Aplica la animación */
     animation-delay: var(--animation-delay, 0s); /* Permite un retraso opcional */
 }
