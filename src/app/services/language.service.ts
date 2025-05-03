@@ -9,7 +9,6 @@ export class LanguageService {
     _translate = inject(TranslateService);
     private readonly LANGUAGE_KEY = 'app_language';
     private availableLanguages = ['es-MX', 'en-US'] as const;
-    changingLanguage = signal(false);
 
     // Signal para el idioma actual
     currentLanguage = signal<'es-MX' | 'en-US'>(
@@ -24,14 +23,10 @@ export class LanguageService {
     }
 
     toggleLanguage() {
-        this.changingLanguage.set(true);
-        setTimeout(() => {
-            this.currentLanguage.update(current =>
-                current === 'es-MX' ? 'en-US' : 'es-MX'
-            );
-            this._translate.use(this.currentLanguage());
-            this.changingLanguage.set(false);
-        }, 100);
+        this.currentLanguage.update(current =>
+            current === 'es-MX' ? 'en-US' : 'es-MX'
+        );
+        this._translate.use(this.currentLanguage());
     }
 
     private getLanguageFromStorage(): 'es-MX' | 'en-US' | null {
