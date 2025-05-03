@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
 import { AboutComponent } from "./components/about/about.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
+import { MetaService } from './services/meta.service';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from './services/language.service';
 
 @Component({
     selector: 'app-root',
@@ -12,5 +14,23 @@ import { ExperienceComponent } from "./components/experience/experience.componen
     styleUrl: './app.component.css'
 })
 export class AppComponent {
-    title = 'portfolio-enrique';
+    _metaService = inject(MetaService);
+    _translateService = inject(TranslateService);
+    _languageService = inject(LanguageService);
+
+    ngOnInit() {
+        this._translateService.onLangChange.subscribe(() => { // Espera cambios de idioma
+            this.updateMeta();
+        });
+
+        this.updateMeta(); // Llama la primera vez
+    }
+
+    private updateMeta() {
+        this._metaService.updateMetaTags({
+            title: 'meta.title',          // Clave para el título (traducido)
+            description: 'meta.description', // Clave para la descripción (traducida)
+            keywords: 'meta.keywords' // Opcional: palabras clave (traducido)
+        });
+    }
 }

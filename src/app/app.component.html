@@ -1,10 +1,16 @@
 <main class="flex justify-center h-screen">
     <div class="flex flex-col flex-1 md:max-w-9/12">
         <app-header />
-        <section class="content flex-1 overflow-y-auto">
-            <app-about />
-            <app-projects />
-            <app-experience />
-        </section>
+        @if (_languageService.changingLanguage()) {
+            <div class="w-full flex justify-center items-center flex-1">
+                <span class="loading loading-ring loading-xl"></span>
+            </div>
+        }@else {
+            <section class="content flex-1 overflow-y-auto">
+                <app-about />
+                <app-projects />
+                <app-experience />
+            </section>
+        }
     </div>
 </main>
