@@ -1,14 +1,11 @@
-<button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-mail"> Correo</span></button>
-<button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-whatsapp"></span> Whatsapp</button>
-<button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-git"></span>Github</button>
-<button class="btn btn-ghost rounded-field" tabindex="0">
-    <button class="btn btn-ghost rounded-field" tabindex="0">
-        <label class="btn swap swap-rotate m-0 p-0">
-            <input type="checkbox"
-            [checked]="language() === 'en-US'"
-            (change)="toggleLanguage()" />
-            <!-- this hidden checkbox controls the state -->
-            <span class="icon icon-git swap-off"></span>
-            <span class="icon icon-angular swap-on"></span>
-        </label>
-    </button>
+<div class="flex gap-4 flex-col sm:flex-row">
+    <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-mail"> Correo</span></button>
+    <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-whatsapp"></span> Whatsapp</button>
+    <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-git"></span>Github</button>
+    <label class="swap swap-rotate p-2 sm:mr-4 rounded-sm active:bg-base-200">
+        <input type="checkbox" [checked]="language() === 'en-US'" (change)="toggleLanguage()" />
+        <!-- this hidden checkbox controls the state -->
+        <img src="/assets/icons/mx.svg" class="icon icon-git swap-off w-10">
+        <img src="/assets/icons/us.svg" class="icon icon-angular swap-on w-10">
+    </label>
+</div>

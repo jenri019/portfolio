@@ -1,7 +1,7 @@
 <section class="projects m-4">
     <h1 class="title">{{ 'projects.title' | translate }}</h1>
     <div class="flex flex-wrap sm:grid lg:grid-cols-2 gap-4">
-        <div class="card bg-base-100 image-full shadow-sm"
+        <div class="card bg-blue-200 image-full shadow-sm"
             *ngFor="let item of ('projects.list' | translate); let i = index">
             <figure>
                 <img [src]="staticData[i].image" alt="Shoes" />

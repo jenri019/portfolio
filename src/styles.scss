@@ -2,6 +2,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.bg-primary {
+    background-color: var(--color-gray-700) !important;
+}
+.timeline {
+    border-color: var(--color-gray-700) !important;
+}
+
 @font-face {
     font-family: 'DMSans';
     src: url('./assets/fonts/DMSans.woff2') format('woff2'),
