@@ -6,10 +6,11 @@ import { ExperienceComponent } from "./components/experience/experience.componen
 import { MetaService } from './services/meta.service';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from './services/language.service';
+import { SkillsComponent } from "./components/skills/skills.component";
 
 @Component({
     selector: 'app-root',
-    imports: [AboutComponent, HeaderComponent, ProjectsComponent, ExperienceComponent],
+    imports: [AboutComponent, HeaderComponent, ProjectsComponent, ExperienceComponent, SkillsComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
@@ -23,7 +24,7 @@ export class AppComponent {
             this.updateMeta();
         });
 
-        this.updateMeta(); // Llama la primera vez
+        this.updateMeta();
     }
 
     private updateMeta() {
