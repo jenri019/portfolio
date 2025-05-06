@@ -21,7 +21,7 @@ export class ProjectsComponent {
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
-            technologies: ['angular', 'typescript', 'html', 'css', 'bootstrap', 'node', 'sequelize',  'sqlserver'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Bootstrap', 'NodeJS', 'Sequelize',  'SQL Server'],
         },
         {
             title: 'Visibility',
@@ -30,7 +30,7 @@ export class ProjectsComponent {
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
-            technologies: ['angular', 'typescript', 'html', 'css', 'ngrx'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
         },
         {
             title: 'Hyundai Loyalty App',
@@ -39,7 +39,7 @@ export class ProjectsComponent {
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: true,
             has_repo: false,
-            technologies: ['angular', 'capacitor', 'typescript', 'html', 'css', 'ngrx'],
+            technologies: ['Angular', 'Capacitor', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
         },
         {
             title: 'Portal de promociones',
@@ -48,7 +48,7 @@ export class ProjectsComponent {
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
-            technologies: ['angular', 'typescript', 'html', 'css', 'ngrx'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
         },
         {
             title: 'Soluciones de empaque MyM',
@@ -57,34 +57,11 @@ export class ProjectsComponent {
             image: '/assets/images/Kynseed Hunt.webp',
             has_project: false,
             has_repo: false,
-            technologies: ['angular', 'typescript', 'html', 'css', 'ngrx'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
         }
     ];
 
     goToProject(url: string) {
         window.open(url, '_blank');
-    }
-
-    getColor(tech: string) {
-        switch (tech) {
-            case 'Angular':
-                return '#DD0031';
-            case 'TypeScript':
-                return '#007ACC';
-            case 'HTML':
-                return '#E34F26';
-            case 'CSS':
-                return '#1572B6';
-            case 'Node':
-                return '#8CC84B';
-            case 'Sequelize':
-                return '#52B0E7';
-            case 'PostgreSQL':
-                return '#336791';
-            case 'Capacitor':
-                return '#119EFF';
-            default:
-                return '#ffffff';
-        }
     }
 }
