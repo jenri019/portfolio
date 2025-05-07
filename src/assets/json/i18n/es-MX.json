@@ -25,23 +25,52 @@
         "list":[
             {
                 "title": "Mi Gestion Sukarne",
-                "description": "Aplicacion web para la gestion del personal de la empresa Sukarne, desarrollado con Angular y Node.js."
+                "description": "Herramienta de la plataforma interna principal para gestionar reconocimientos, oportunidades de mejora del personal y control de accesos.",
+                "tasks": [
+                    "Acceso basado en roles",
+                    "Módulo para asignación, visualización y seguimiento de reconocimientos y oportunidades de mejora",
+                    "Generación de reportes con base en diferentes filtros segun el rol de usuario"
+                ]
             },
             {
                 "title": "Visibility ",
-                "description": "Aplicacion web para la visualizacion de datos requeridos y la gestion del acceso a este mismo para Mitec, desarrollado con Angular."
+                "description": "Aplicación web para visualización de datos corporativos, con dashboards y control de accesos.",
+                "tasks": [
+                    "Acceso basado en roles y codigos de seguridad",
+                    "Visualizacion de datos aplicación de filtros y generación de reportes segun el rol de usuario",
+                    "Generacion y descarga de reportes segun el rol de usuario",
+                    "Módulo para la gestión de usuarios"
+                ]
             },
             {
                 "title": "Hyundai Loyalty App",
-                "description": "Aplicacion movil para mantener el seguimiento de los servicios del usuario, mostrar informacion relevante y los beneficios que tiene como cliente de Hyundai, desarrollado con Angular y Capacitor."
+                "description": "Aplicación móvil para clientes de Hyundai, enfocada en fidelización mediante seguimiento de servicios, promociones personalizadas y geolocalización de distribuidores.",
+                "tasks": [
+                    "Registro y autenticación de usuarios.",
+                    "Visualización de datos de vehículos, historial de servicios y promociones vigentes",
+                    "Mapa interactivo con distribuidores cercanos y detalles de contacto."
+                ]
             },
             {
                 "title": "Portal de promociones",
-                "description": "Aplicacion web para la gestion de las promociones de Palacio de Hierro, desarrollado con Angular."
+                "description": "Aplicacion web para administrar promociones de Palacio de Hierro, desde creación hasta monitoreo y control de accesos.",
+                "tasks": [
+                    "Acceso basado en roles",
+                    "Carga de layouts para generación automatizada de promociones",
+                    "Dashboard de datos segun el rol de usuario",
+                    "Módulo para la gestión de usuarios"
+                ]
             },
             {
                 "title": "Soluciones de empaque MyM",
-                "description": "Aplicacion web para la gestion de pedidos por parte de los clientes de Soluciones de Empaque MyM, desarrollado con Angular."
+                "description": "Aplicacion web para la gestion de pedidos por parte de los clientes de Soluciones de Empaque MyM",
+                "tasks": [
+                    "Acceso a usuarios",
+                    "Carrito de compras con creación y edición de pedidos",
+                    "Historial de pedidos con seguimiento de estados",
+                    "Solicitudes de cotización",
+                    "Módulo para la gestión de direcciones de envio"
+                ]
             }
         ]
     },

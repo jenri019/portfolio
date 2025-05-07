@@ -19,29 +19,58 @@
     },
     "skills": {
         "title": "Skills"
-    },  
+    },
     "projects": {
         "title": "Projects",
         "list": [
             {
                 "title": "Mi Gestion Sukarne",
-                "description": "Web application for managing personnel at Sukarne, developed with Angular and Node.js."
+                "description": "Main internal platform tool for managing recognitions, staff improvement opportunities, and access control.",
+                "tasks": [
+                    "Role-based access",
+                    "Module for assignment, visualization, and tracking of recognitions and improvement opportunities",
+                    "Report generation based on different filters according to user role"
+                ]
             },
             {
                 "title": "Visibility",
-                "description": "Web application for visualizing required data and managing access to it for Mitec, developed with Angular."
+                "description": "Web application for corporate data visualization, with dashboards and access control.",
+                "tasks": [
+                    "Role-based access and security codes",
+                    "Data visualization, filter application, and role-based report generation",
+                    "Role-based report generation and download",
+                    "User management module"
+                ]
             },
             {
                 "title": "Hyundai Loyalty App",
-                "description": "Mobile application for tracking user services, displaying their information, and the benefits they have as a Hyundai customer, developed with Angular and Capacitor."
+                "description": "Mobile app for Hyundai customers, focused on loyalty through service tracking, personalized promotions, and dealer geolocation.",
+                "tasks": [
+                    "User registration and authentication",
+                    "Vehicle data display, service history, and active promotions",
+                    "Interactive map with nearby dealers and contact details"
+                ]
             },
             {
                 "title": "Portal de promociones",
-                "description": "Web application for managing promotions at Palacio de Hierro, developed with Angular."
+                "description": "Web application to manage Palacio de Hierro promotions, from creation to monitoring and access control.",
+                "tasks": [
+                    "Role-based access",
+                    "Layout upload for automated promotion generation",
+                    "Role-based data dashboard",
+                    "User management module"
+                ]
             },
             {
-                "title": "Soluciones de empaque MyM",
-                "description": "Web application for managing orders from customers of Soluciones de Empaque MyM, developed with Angular."
+                "title": "Soluciones de Empaque MyM",
+                "description": "Web application for order management by Soluciones de Empaque MyM.",
+                "tasks": [
+                    "User access",
+                    "Shopping cart with order creation and editing",
+                    "Order history with status tracking",
+                    "Quote requests",
+                    "Shipping address management module"
+                ]
             }
         ]
     },
