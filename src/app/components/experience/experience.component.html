@@ -1,7 +1,7 @@
 <section class="experience m-4">
     <h1 class="title">{{ 'experience.title' | translate }}</h1>
     <div class="flex flex-wrap gap-4">
-        @for (item of (('experience.list' | translate) || []); track $index; let even = $even) {
+        @for (item of (('experience.list' | translate) || []); track $index; let index = $index) {
             <div class="card image-full custom-primary rounded-xl shadow-sm fade-in my-4 w-full grow-0 sm:w-64 h-96">
                 <figure class="h-full w-full">
                     <img src="/assets/images/Kynseed Hunt.webp" alt="Album" loading="lazy"
@@ -14,7 +14,7 @@
                         <h1 class="text-2xl">{{item.employer}}</h1>
                         <h2 class="text-xl">{{item.date}}</h2>
                     </div>
-                    <button class="btn">View page</button>
+                    <button class="btn" (click)="visitWebsite(websites[index])">View page</button>
                 </div>
             </div>
         }

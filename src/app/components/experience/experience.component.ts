@@ -13,5 +13,12 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
+    websites = [
+        'https://www.dostics.com.mx/',
+        'https://casamecate.com',
+    ]
 
+    visitWebsite(website: string) {
+        window.open(website, '_blank');
+    }
 }
