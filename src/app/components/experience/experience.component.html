@@ -1,16 +1,22 @@
-<section class="experience flex flex-col justify-center items-center m-4">
-    @for (item of (('experience.list' | translate) || []); track $index; let even = $even) {
-        <div class="custom-primary rounded-xl grid md:grid-cols-2 shadow-sm fade-in my-4 mx-4 w-full grow-0">
-            <figure class="h-full w-full  max-h-64">
-                <img src="/assets/images/Kynseed Hunt.webp" alt="Album" loading="lazy"
-                    class="object-cover h-full w-full"
-                />
-            </figure>
-            <div class="card-body">
-                <h1 class="text-2xl">{{item.title}}</h1>
-                <h1 class="text-2xl">{{item.employer}}</h1>
-                <h2 class="text-xl">{{item.date}}</h2>
+<section class="experience m-4">
+    <h1 class="title">{{ 'experience.title' | translate }}</h1>
+    <div class="flex flex-wrap gap-4">
+        @for (item of (('experience.list' | translate) || []); track $index; let even = $even) {
+            <div class="card image-full custom-primary rounded-xl shadow-sm fade-in my-4 w-full grow-0 sm:w-64 h-96">
+                <figure class="h-full w-full">
+                    <img src="/assets/images/Kynseed Hunt.webp" alt="Album" loading="lazy"
+                        class="object-cover h-full w-full"
+                    />
+                </figure>
+                <div class="card-body">
+                    <div class="flex-1">
+                        <h1 class="text-2xl">{{item.title}}</h1>
+                        <h1 class="text-2xl">{{item.employer}}</h1>
+                        <h2 class="text-xl">{{item.date}}</h2>
+                    </div>
+                    <button class="btn">View page</button>
+                </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </section>
