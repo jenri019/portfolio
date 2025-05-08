@@ -7,9 +7,9 @@
                     <img [src]="staticData[i].image" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                    <h2 class="title">{{ staticData[i].title }}</h2>
-                    <p class="description grow-0">{{ project.description }}</p>
-                    <ul class="grow-1 list-disc ml-2">
+                    <h2 class="title-2">{{ staticData[i].title }}</h2>
+                    <p class="text-2 grow-0">{{ project.description }}</p>
+                    <ul class="text-2 grow-1 list-disc ml-2">
                         @for (task of project.tasks; track $index) {
                             <li>{{ task }}</li>
                         }

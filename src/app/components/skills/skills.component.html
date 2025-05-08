@@ -1,9 +1,9 @@
 <section class="skills m-4">
     <h1 class="title">{{ 'skills.title' | translate }}</h1>
-    <div class="flex flex-wrap justify-center items-center gap-4 mt-4 custom-primary rounded-xl p-2">
+    <div class="flex flex-wrap justify-center items-center gap-8 mt-4 custom-primary rounded-xl p-2">
         @for (icon of technologies; track $index) {
-            <div class="skills__tooltip tooltip rounded-full w-12 h-12 object-cover p-1 flex justify-center items-center" [attr.data-tip]="icon.icon">
-                <img [src]="`/assets/icons/${icon.icon}.svg`" [alt]="icon.icon" width="30">
+            <div class="skills__tooltip tooltip rounded-full w-20 h-20 object-cover p-1 flex justify-center items-center" [attr.data-tip]="icon.icon">
+                <img [src]="`/assets/icons/${icon.icon}.svg`" [alt]="icon.icon">
             </div>
         }
     </div>
