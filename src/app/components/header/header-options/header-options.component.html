@@ -1,7 +1,8 @@
 <div class="flex gap-4 flex-col sm:flex-row">
-    <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-mail"> Correo</span></button>
-    <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-whatsapp"></span> Whatsapp</button>
-    <button class="btn btn-ghost rounded-field" tabindex="0"><span class="icon icon-github"></span>Github</button>
+    <button class="btn btn-ghost rounded-field" tabindex="0" (click)="exec(1)"><span class="icon icon-mail"> Email</span></button>
+    <button class="btn btn-ghost rounded-field" tabindex="0" (click)="exec(2)"><span class="icon icon-whatsapp"></span> Whatsapp</button>
+    <button class="btn btn-ghost rounded-field" tabindex="0" (click)="exec(3)"><span class="icon icon-github"></span>Github</button>
+    <button class="btn btn-ghost rounded-field" tabindex="0" (click)="exec(4)"><span class="icon icon-download"></span>{{ 'options.download_cv' | translate }}</button>
     <label class="swap swap-rotate p-2 sm:mr-4 rounded-sm active:bg-base-200">
         <input type="checkbox" [checked]="language() === 'en-US'" (change)="toggleLanguage()" />
         <!-- this hidden checkbox controls the state -->

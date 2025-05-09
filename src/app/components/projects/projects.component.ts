@@ -16,52 +16,53 @@ export class ProjectsComponent {
     staticData = [
         {
             title: 'Mi Gestion Sukarne',
-            url: 'https://example.com/proyecto1',
-            repo: '',
-            image: '/assets/images/Kynseed Hunt.webp',
+            url: '#',
+            repo: '#',
+            image: 'sukarne',
             has_project: false,
             has_repo: false,
-            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Bootstrap', 'NodeJS', 'Sequelize',  'SQL Server'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NodeJS', 'Sequelize',  'SQL Server', 'Angular Material', 'Bootstrap', 'Tortoise'],
         },
         {
             title: 'Visibility',
-            url: 'https://example.com/proyecto1',
-            repo: '',
-            image: '/assets/images/Kynseed Hunt.webp',
+            url: '#',
+            repo: '#',
+            image: 'visibility',
             has_project: false,
             has_repo: false,
-            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx', 'Angular Material', 'Tailwind CSS', 'OWASP ZAP', 'Gitlab'],
         },
         {
             title: 'Hyundai Loyalty App',
             url: 'https://play.google.com/store/apps/details?id=com.hyundai.apployalty&hl=es_MX',
-            repo: '',
-            image: '/assets/images/Kynseed Hunt.webp',
+            repo: '#',
+            image: 'hyundai',
             has_project: true,
             has_repo: false,
-            technologies: ['Angular', 'Capacitor', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
+            technologies: ['Angular', 'TypeScript', 'Capacitor', 'HTML5', 'CSS3', 'NgRx', 'Angular Material', 'Gitlab'],
         },
         {
             title: 'Portal de promociones',
-            url: 'https://example.com/proyecto1',
-            repo: '',
-            image: '/assets/images/Kynseed Hunt.webp',
+            url: '#',
+            repo: '#',
+            image: 'palacio',
             has_project: false,
             has_repo: false,
-            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
+            technologies: ['Angular', 'TypeScript', 'Cognito', 'HTML5', 'CSS3', 'NgRx', 'Angular Material', 'Tailwind CSS', 'Gitlab'],
         },
         {
             title: 'Soluciones de empaque MyM',
-            url: 'https://example.com/proyecto2',
-            repo: '',
-            image: '/assets/images/Kynseed Hunt.webp',
+            url: '#',
+            repo: '#',
+            image: 'empaques',
             has_project: false,
             has_repo: false,
-            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx', 'Angular Material', 'Tailwind CSS', 'Github'],
         }
     ];
 
-    goToProject(url: string) {
+    openLink(url: string) {
+        if (url === '#') return;
         window.open(url, '_blank');
     }
 }

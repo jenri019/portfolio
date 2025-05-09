@@ -1,10 +1,11 @@
-<section class="projects m-4">
+<section class="projects">
     <h1 class="title">{{ 'projects.title' | translate }}</h1>
-    <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+    <p class="mb-4 text-1">{{ 'projects.description' | translate }}</p>
+    <div class="grid sm:grid-cols-2 gap-4">
         @for (project of ('projects.list' | translate); track $index; let i = $index) {
-            <div class="card image-full shadow-sm fade-in">
-                <figure>
-                    <img [src]="staticData[i].image" alt="Shoes" />
+            <div class="card custom-primary rounded-xl shadow-sm fade-in">
+                <figure class="h-80 cursor-pointer" (click)="openLink(`/assets/images/${staticData[i].image}.webp`)">
+                    <img [src]="`/assets/images/${staticData[i].image}.webp`" [alt]="staticData[i].image" class="w-full h-full object-cover" />
                 </figure>
                 <div class="card-body">
                     <h2 class="title-2">{{ staticData[i].title }}</h2>
@@ -22,11 +23,11 @@
                     <div class="separator"></div>
                     <div class="flex justify-center gap-4 h-[2rem]">
                         <button aria-label="Visit repository"
-                            class="btn rounded-full navbar__option font-19" (click)="goToProject(staticData[i].repo)" [disabled]="!staticData[i].has_repo">
+                            class="btn rounded-full navbar__option font-19" (click)="openLink(staticData[i].repo)" [disabled]="!staticData[i].has_repo">
                             <span class="icon icon-git"></span>
                         </button>
                         <button aria-label="View on live"
-                            class="btn rounded-full navbar__option font-19" (click)="goToProject(staticData[i].url)" [disabled]="!staticData[i].has_project">
+                            class="btn rounded-full navbar__option font-19" (click)="openLink(staticData[i].url)" [disabled]="!staticData[i].has_project">
                             <span class="icon icon-home"></span>
                         </button>
                     </div>

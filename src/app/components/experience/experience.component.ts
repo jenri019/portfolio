@@ -14,8 +14,14 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ExperienceComponent {
     websites = [
-        'https://www.dostics.com.mx/',
-        'https://casamecate.com',
+        {
+            name: 'dostics',
+            url: 'https://www.dostics.com.mx/',
+        },
+        {
+            name: 'mecate',
+            url: 'https://casamecate.com',
+        }
     ]
 
     visitWebsite(website: string) {

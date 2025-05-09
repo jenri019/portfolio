@@ -23,6 +23,8 @@ export class SkillsComponent {
         { icon: 'Django' },
         { icon: 'Figma' },
         { icon: 'Git' },
+        { icon: 'Github'},
+        { icon: 'Gitlab' },
         { icon: 'HTML5' },
         { icon: 'JavaScript' },
         { icon: 'Material UI' },
@@ -37,6 +39,7 @@ export class SkillsComponent {
         { icon: 'SQLite' },
         { icon: 'SQL Server' },
         { icon: 'Tailwind CSS' },
+        { icon: 'Tortoise' },
         { icon: 'TypeScript' },
         { icon: 'OWASP ZAP' }
     ];

@@ -1,20 +1,23 @@
-<section class="experience m-4">
+<section class="experience">
     <h1 class="title">{{ 'experience.title' | translate }}</h1>
     <div class="flex flex-wrap gap-4">
         @for (item of (('experience.list' | translate) || []); track $index; let index = $index) {
-            <div class="card image-full custom-primary rounded-xl shadow-sm fade-in my-4 w-full grow-0 sm:w-72 h-96">
+            <div class="card image-full custom-primary rounded-xl shadow-sm fade-in w-full grow-0 sm:w-72 min-h-72">
                 <figure class="h-full w-full">
-                    <img src="" alt="Album" loading="lazy"
+                    <img [src]="`/assets/images/${websites[index].name}.webp`" [alt]="websites[index].name" loading="lazy"
                         class="object-cover h-full w-full"
                     />
                 </figure>
                 <div class="card-body">
-                    <div class="flex-1">
-                        <h1 class="text-2xl">{{item.title}}</h1>
-                        <h1 class="text-2xl">{{item.employer}}</h1>
-                        <h2 class="text-xl">{{item.date}}</h2>
+                    <div class="flex-1 font-bold">
+                        <h1 class="title-2">{{item.title}}</h1>
+                        <h2 class="title-2">{{item.employer}}</h2>
+                        <p class="text-1">{{item.date}}</p>
                     </div>
-                    <button class="btn" (click)="visitWebsite(websites[index])">View page</button>
+                    <button class="btn" (click)="visitWebsite(websites[index].url)">
+                        <span class="icon icon-home"></span>
+                        {{ 'options.site' | translate }}
+                    </button>
                 </div>
             </div>
         }
