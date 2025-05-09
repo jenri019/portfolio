@@ -22,6 +22,7 @@
     },
     "projects": {
         "title": "Proyectos",
+        "description": "A continuación se presentan algunos de los proyectos en los que he trabajado. Debido a acuerdos de confidencialidad, no puedo compartir todos los detalles de cada proyecto, como repositorios o enlaces al sitio web en producción, pero he incluido una breve descripción de lo realizado y las tecnologías utilizadas.",
         "list":[
             {
                 "title": "Mi Gestion Sukarne",
@@ -97,7 +98,7 @@
     },
     "options": {
         "show_details": "Mostrar detalles",
-        "open_project": "Ver proyecto",
+        "site": "Visitar sitio",
         "download_cv": "Descargar CV"
     }
 }

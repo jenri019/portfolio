@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'portfolio';
   src:
-    url('./fonts/portfolio.ttf?epwxa5') format('truetype'),
-    url('./fonts/portfolio.woff?epwxa5') format('woff'),
-    url('./fonts/portfolio.svg?epwxa5#portfolio') format('svg');
+    url('./fonts/portfolio.ttf?ygazal') format('truetype'),
+    url('./fonts/portfolio.woff?ygazal') format('woff'),
+    url('./fonts/portfolio.svg?ygazal#portfolio') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,12 +27,6 @@
 .icon-home:before {
   content: "\e91c";
 }
-.icon-sqlserver:before {
-  content: "\e91d";
-}
-.icon-language:before {
-  content: "\e918";
-}
 .icon-github:before {
   content: "\e919";
 }
@@ -42,75 +36,9 @@
 .icon-mail:before {
   content: "\e91b";
 }
-.icon-cognito:before {
-  content: "\e913";
-}
-.icon-css:before {
-  content: "\e914";
-}
-.icon-html:before {
-  content: "\e915";
-}
-.icon-zap:before {
-  content: "\e916";
-}
-.icon-angular:before {
-  content: "\e900";
-}
-.icon-bootstrap:before {
-  content: "\e901";
-}
-.icon-capacitor:before {
-  content: "\e902";
-}
-.icon-django:before {
-  content: "\e903";
-}
-.icon-figma:before {
-  content: "\e904";
-}
 .icon-git:before {
   content: "\e905";
 }
-.icon-javascript:before {
-  content: "\e906";
-}
-.icon-mui:before {
-  content: "\e907";
-}
-.icon-mysql:before {
-  content: "\e908";
-}
-.icon-ngrx:before {
-  content: "\e909";
-}
-.icon-node:before {
-  content: "\e90a";
-}
-.icon-php:before {
-  content: "\e90b";
-}
-.icon-python:before {
-  content: "\e90c";
-}
-.icon-react:before {
-  content: "\e90d";
-}
-.icon-redux:before {
-  content: "\e90e";
-}
-.icon-sequelize:before {
-  content: "\e90f";
-}
-.icon-sqlite:before {
-  content: "\e910";
-}
-.icon-tailwindcss:before {
-  content: "\e911";
-}
-.icon-typescript:before {
-  content: "\e912";
-}
-.icon-check:before {
-  content: "\e917";
+.icon-download:before {
+  content: "\e900";
 }
