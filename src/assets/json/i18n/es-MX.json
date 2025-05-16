@@ -72,6 +72,16 @@
                     "Solicitudes de cotización",
                     "Módulo para la gestión de direcciones de envio"
                 ]
+            },
+            {
+                "title": "Mapas App",
+                "description": "Aplicación web del curso Angular 2025, donde se visualizan mapas con diferentes opciones usando MapLibre.",
+                "tasks": [
+                    "Mapa en pantalla completa",
+                    "Añadir, quitar y mover hacia marcadores",
+                    "Listado de objetos con marcadores y visualización de ubicación en minimapa",
+                    "Listado de escuelas de Hidalgo en un accordion con filtro por nombre"
+                ]
             }
         ]
     },

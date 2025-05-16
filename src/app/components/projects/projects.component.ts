@@ -58,6 +58,15 @@ export class ProjectsComponent {
             has_project: false,
             has_repo: false,
             technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'NgRx', 'Angular Material', 'Tailwind CSS', 'Github'],
+        },
+        {
+            title: 'Mapas app',
+            url: '#',
+            repo: 'https://github.com/jenri019/maps',
+            image: 'mapa',
+            has_project: false,
+            has_repo: true,
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Github'],
         }
     ];
 

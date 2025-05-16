@@ -72,6 +72,16 @@
                     "Quote requests",
                     "Shipping address management module"
                 ]
+            },
+            {
+                "title": "Mapas App",
+                "description": "Web application from the Angular 2025 course, where maps are visualized with different options using MapLibre.",
+                "tasks": [
+                    "Full-screen map",
+                    "Add, remove, and move to markers",
+                    "Object list with markers and location visualization on a minimap",
+                    "List of Hidalgo schools in an accordion with name filter"
+                ]
             }
         ]
     },
