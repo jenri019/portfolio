@@ -67,6 +67,15 @@ export class ProjectsComponent {
             has_project: false,
             has_repo: true,
             technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Github'],
+        },
+        {
+            title: 'Teslo-Shop',
+            url: '#',
+            repo: 'https://github.com/jenri019/teslo-shop.git',
+            image: 'teslo',
+            has_project: false,
+            has_repo: true,
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Github'],
         }
     ];
 

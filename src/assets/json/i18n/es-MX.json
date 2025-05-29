@@ -23,7 +23,7 @@
     "projects": {
         "title": "Proyectos",
         "description": "A continuación se presentan algunos de los proyectos en los que he trabajado. Debido a acuerdos de confidencialidad, no puedo compartir todos los detalles de cada proyecto, como repositorios o enlaces al sitio web en producción, pero he incluido una breve descripción de lo realizado y las tecnologías utilizadas.",
-        "list":[
+        "list": [
             {
                 "title": "Mi Gestion Sukarne",
                 "description": "Herramienta de la plataforma interna principal para gestionar reconocimientos, oportunidades de mejora del personal y control de accesos.",
@@ -81,6 +81,16 @@
                     "Añadir, quitar y mover hacia marcadores",
                     "Listado de objetos con marcadores y visualización de ubicación en minimapa",
                     "Listado de escuelas de Hidalgo en un accordion con filtro por nombre"
+                ]
+            },
+            {
+                "title": "Teslo-Shop",
+                "description": "Tienda online simple que incluye visualización de productos, filtro por categorías, autenticación de usuarios y panel de administración.",
+                "tasks": [
+                    "Registro y autenticación de usuarios.",
+                    "Visualización de productos por categorías.",
+                    "Visualización de producto por id.",
+                    "Panel de administración para gestión de productos."
                 ]
             }
         ]

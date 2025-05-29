@@ -82,6 +82,16 @@
                     "Object list with markers and location visualization on a minimap",
                     "List of Hidalgo schools in an accordion with name filter"
                 ]
+            },
+            {
+                "title": "Teslo-Shop",
+                "description": "Simple online store that includes product visualization, filter by categories, user authentication, and an admin panel.",
+                "tasks": [
+                    "User registration and authentication",
+                    "Viewing products by categories.",
+                    "Viewing product by id.",
+                    "Admin panel for product management."
+                ]
             }
         ]
     },
