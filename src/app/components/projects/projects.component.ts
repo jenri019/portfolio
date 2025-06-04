@@ -75,7 +75,7 @@ export class ProjectsComponent {
             image: 'teslo',
             has_project: false,
             has_repo: true,
-            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Github'],
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Github', 'Docker'],
         }
     ];
 

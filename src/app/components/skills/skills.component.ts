@@ -21,6 +21,7 @@ export class SkillsComponent {
         { icon: 'Capacitor' },
         { icon: 'CSS3' },
         { icon: 'Django' },
+        { icon: 'Docker' },
         { icon: 'Figma' },
         { icon: 'Git' },
         { icon: 'Github'},
