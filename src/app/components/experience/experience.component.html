@@ -2,7 +2,7 @@
     <h1 class="title">{{ 'experience.title' | translate }}</h1>
     <div class="flex flex-wrap gap-4">
         @for (item of (('experience.list' | translate) || []); track $index; let index = $index) {
-            <div class="card image-full custom-primary rounded-xl shadow-sm fade-in w-full grow-0 sm:w-72 min-h-72">
+            <div class="card image-full custom-primary rounded-xl shadow-sm fade-in w-full grow-0 sm:w-72 h-72">
                 <figure class="h-full w-full">
                     <img [src]="`/assets/images/${websites[index].name}.webp`" [alt]="websites[index].name" loading="lazy"
                         class="object-cover h-full w-full"

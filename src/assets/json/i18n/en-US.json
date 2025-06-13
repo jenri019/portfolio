@@ -92,6 +92,16 @@
                     "Viewing product by id.",
                     "Admin panel for product management."
                 ]
+            },
+            {
+                "title": "Mensajería",
+                "description": "Simple real-time messaging web application for learning socket usage, where users can send and receive messages instantly.",
+                "tasks": [
+                    "User authentication.",
+                    "Route protection.",
+                    "Message sending, receiving, and real-time visualization.",
+                    "Sending private and global messages."
+                ]
             }
         ]
     },

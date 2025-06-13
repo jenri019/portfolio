@@ -76,6 +76,15 @@ export class ProjectsComponent {
             has_project: false,
             has_repo: true,
             technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Github', 'Docker'],
+        },
+        {
+            title: 'Mensajeria',
+            url: '#',
+            repo: 'https://github.com/jenri019/socket-server-front.git',
+            image: 'messages',
+            has_project: false,
+            has_repo: true,
+            technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Socket.IO', 'NodeJS', 'Tailwind CSS', 'Github'],
         }
     ];
 

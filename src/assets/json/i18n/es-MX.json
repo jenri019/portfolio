@@ -92,6 +92,16 @@
                     "Visualización de producto por id.",
                     "Panel de administración para gestión de productos."
                 ]
+            },
+            {
+                "title": "Mensajería",
+                "description": "Aplicación web sencilla de mensajería en tiempo real para aprendizaje del uso de sockets, donde los usuarios pueden enviar y recibir mensajes instantáneamente.",
+                "tasks": [
+                    "Autenticación de usuarios.",
+                    "Protección de rutas.",
+                    "Envio, recepcion y visualización de mensajes en tiempo real.",
+                    "Envio de mensajes privados y globales."
+                ]
             }
         ]
     },

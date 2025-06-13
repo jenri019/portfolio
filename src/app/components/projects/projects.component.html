@@ -2,7 +2,7 @@
     <h1 class="title">{{ 'projects.title' | translate }}</h1>
     <p class="mb-4 text-1">{{ 'projects.description' | translate }}</p>
     <div class="grid sm:grid-cols-2 gap-4">
-        @for (project of ('projects.list' | translate); track $index; let i = $index) {
+        @for (project of ('projects.list' | translate); track project.title; let i = $index) {
             <div class="card custom-primary rounded-xl shadow-sm fade-in">
                 <figure class="h-80 cursor-pointer" (click)="openLink(`/assets/images/${staticData[i].image}.webp`)">
                     <img [src]="`/assets/images/${staticData[i].image}.webp`" [alt]="staticData[i].image" class="w-full h-full object-cover" />

@@ -23,6 +23,7 @@ export class SkillsComponent {
         { icon: 'Django' },
         { icon: 'Docker' },
         { icon: 'Figma' },
+        { icon: 'Firestore' },
         { icon: 'Git' },
         { icon: 'Github'},
         { icon: 'Gitlab' },
@@ -37,6 +38,7 @@ export class SkillsComponent {
         { icon: 'React' },
         { icon: 'Redux' },
         { icon: 'Sequelize' },
+        { icon: 'Socket.IO' },
         { icon: 'SQLite' },
         { icon: 'SQL Server' },
         { icon: 'Tailwind CSS' },
@@ -44,9 +46,4 @@ export class SkillsComponent {
         { icon: 'TypeScript' },
         { icon: 'OWASP ZAP' }
     ];
-/*     duplicatedTechnologies: any[] = [];
-
-    ngOnInit() {
-      this.duplicatedTechnologies = [...this.technologies, ...this.technologies];
-    } */
 }
